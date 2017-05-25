@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu__nav">
+      <div class="menu__logo"></div>
+      <div class="menu__item">
+        <ul class="menu__list">
+          <li><a>Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="menu__user">
+        <a href="#">Корзина</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="main__catalog-title">Магазин готовых шаблонов</h1>
+    <div class="filter">
+      <div class="filter__price">
+      <span class="filter__title">Стоимость:</span>
+      <div class="filter__range">
+        <div class="filter__range-controls">
+          <div class="filter__bar"></div>
+            <div class="filter__toggle filter__toggle--min"></div>
+            <div class="filter__toggle filter__toggle--max"></div>
+          </div>
+        </div>
+      </div>
+      <div class="filter__grid">
+        <span class="filter__title">Сетка</span>
+        <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid" id="fluid" value="fluid">
+        <label for="fluid">Резиновая</label>
+        <input type="radio" name="grid" id="fix" value="fix">
+        <label for="fix">Фиксированная</label>
+      </div>
+      <div class="filter__features">
+        <span class="filter__title">Особенности:</span>
+        <input type="checkbox" name="slider" id="slider" checked>
+        <label for="slider">Слайдер</label>
+        <input type="checkbox" name="advantage" id="advantage">
+        <label for="advantage">Блок преимуществ</label>
+        <input type="checkbox" name="news" id="news" checked>
+        <label for="news">Новости</label>
+        <input type="checkbox" name="gallery" id="gallery">
+        <label for="gallery">Галерея</label>
+        <input type="checkbox" name="basket" id="basket">
+        <label for="basket">Корзина</label>
+      </div>
+      <button class="filter__button" type="submit">Показать</button>
+    </div>
+    <div class="catalog">
+      <div class="catalog__filter">
+      <ul class="catalog__title">
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
+      </ul>
+      <div class="catalog__sort catalog__sort--down"></div>
+      <div class="catalog__sort catalog__sort--up"></div>
+    </div>
+    <div class="catalog__list">
+      <div class="catalog__item"><img src="" alt=""></div>
+      <div class="catalog__item"><img src="" alt=""></div>
+      <div class="catalog__item"><img src="" alt=""></div>
+      <div class="catalog__item"><img src="" alt=""></div>
+      <div class="catalog__item"><img src="" alt=""></div>
+      <div class="catalog__item"><img src="" alt=""></div>
+    </div>
+    </div>
+    <div class="paginator">
+      <a href="" class="paginator__current">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="" class="paginator__next">Следующая</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__map">
+      <div class="footer__address">
+        <h1>NЁRDS DESIGN STUDIO</h1>
+        <p class="footer__address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer__address-phone">тел. +7 (812) 275-75-75</p>
+        <a class="footer__address-button">Напишите нам</a>
+        <div>
+    </div>
+    <div class="footer__contacts">
+      <a href="#" class="footer__contact-item footer__contact-item--vk">Вконтакте</a>
+      <a href="#" class="footer__contact-item footer__contact-item--fb">Фейсбук</a>
+      <a href="#" class="footer__contact-item footer__contact-item--ig">Инстаграмм</a>
+    </div>
+    <div class="footer__text">
+      <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
+      <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
+</html>
