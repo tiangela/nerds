@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Nerds: Catalog</title>
 </head>
 <body>
+  <div class="container">
   <header>
     <div class="menu">
       <div class="menu__nav">
@@ -27,16 +28,17 @@
   </header>
   <main class="main">
     <h1 class="main__catalog-title">Магазин готовых шаблонов</h1>
-    <div class="filter">
-      <div class="filter__price">
-      <span class="filter__title">Стоимость:</span>
+    <form action="form.php" method="GET" class="filter">
+    <span class="filter__title">Стоимость:</span>
       <div class="filter__range">
-        <div class="filter__range-controls">
-          <div class="filter__bar"></div>
-            <div class="filter__toggle filter__toggle--min"></div>
-            <div class="filter__toggle filter__toggle--max"></div>
-          </div>
+        <div class="filter__scale"></div>
+        <div class="filter__bar"></div>
+        <div class="filter__toggle filter__toggle--min"></div>
+        <div class="filter__toggle filter__toggle--max"></div>
         </div>
+      <div class="filter__price">
+        <label class="filter__value filter__value--min-price">от <input name="min-price" type="text" value="0"></label>
+        <label class="filter__value filter__value--max-price">до <input name="max-price" type="text" value="15000"></label>
       </div>
       <div class="filter__grid">
         <span class="filter__title">Сетка</span>
@@ -61,7 +63,7 @@
         <label for="basket">Корзина</label>
       </div>
       <button class="filter__button" type="submit">Показать</button>
-    </div>
+    </form>
     <div class="catalog">
       <div class="catalog__filter">
       <ul class="catalog__title">
@@ -80,7 +82,7 @@
       <div class="catalog__item"><img src="" alt=""></div>
       <div class="catalog__item"><img src="" alt=""></div>
     </div>
-    </div>
+  </div>
     <div class="paginator">
       <a href="" class="paginator__current">1</a>
       <a href="">2</a>
@@ -88,6 +90,7 @@
       <a href="" class="paginator__next">Следующая</a>
     </div>
   </main>
+  </div>
   <footer class="footer">
     <div class="footer__map">
       <div class="footer__address">
@@ -97,6 +100,7 @@
         <a class="footer__address-button">Напишите нам</a>
         <div>
     </div>
+    <div class="container">
     <div class="footer__contacts">
       <a href="#" class="footer__contact-item footer__contact-item--vk">Вконтакте</a>
       <a href="#" class="footer__contact-item footer__contact-item--fb">Фейсбук</a>
@@ -105,6 +109,7 @@
     <div class="footer__text">
       <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
       <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
     </div>
   </footer>
 </body>

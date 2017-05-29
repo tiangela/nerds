@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #eee;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu__item a, .menu__user a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  line-height: 30px;
+  padding-top: 25px;
+}
+
+.main__slider{
+  background-color: #eee;
+}

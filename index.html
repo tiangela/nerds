@@ -1,110 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Nerds</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-<header>
-  <div class="menu">
-    <div class="menu__nav">
-    <div class="menu__logo"></div>
-    <div class="menu__item">
-      <ul class="menu__list">
-        <li><a>Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+  <header>
+    <div class="container">
+      <div class="menu">
+        <div class="menu__logo">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+        </div>
+        <div class="menu__nav">
+          <div class="menu__content">
+            <ul class="menu__list">
+              <li class="menu__item"><a>Студия</a></li>
+              <li class="menu__item"><a href="#">Клиенты</a></li>
+              <li class="menu__item"><a href="#">Магазин</a></li>
+              <li class="menu__item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu__user">
+          <a href="#">Корзина</a>
+        </div>
+      </div>
+      <div class="main__slider main__slider--1">
+        <div class="main__slider-text">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div class="main__slider-photo">
+        </div>
+      </div>
     </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__list">
+        <div class="main__item">
+          <img src="#" alt="">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним, после того, как увидит ваш сайт</p>
+          <button type="button" name="button">Заказать</button>
+        </div>
+        <div class="main__item">
+          <img src="#" alt="">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button type="button" name="button">Заказать</button>
+        </div>
+        <div class="main__item">
+          <img src="#" alt="">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <button type="button" name="button">Заказать</button>
+        </div>
+      </div>
+      <div class="main__description">
+        <div class="main__text">
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <ul>Выполняем заказы на разработку:
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="main__statistics">
+          <div class="main__logo">
+            <img src="" alt="">
+          </div>
+          <div class="main__table-title">C 2004 года любим точность во всем</div>
+          <table>
+            <tr>
+              <th>146%</th>
+              <th>100%</th>
+              <th>50%</th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="main__clients">
+        <div class="main__client main__client--academy"><a href=""></a>Академия</div>
+        <div class="main__client main__client--borodinsky"><a href="">Бородинский</a></div>
+        <div class="main__client main__client--pink"><a href=""></a>Пинк</div>
+        <div class="main__client main__client--mishka"><a href=""></a>Мишка</div>
+      </div>
+  </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__map">
+      <div class="footer__address">
+        <h1>NЁRDS DESIGN STUDIO</h1>
+        <p class="footer__address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer__address-phone">тел. +7 (812) 275-75-75</p>
+        <a class="footer__address-button">Напишите нам</a>
+      </div>
     </div>
-    <div class="menu__user">
-      <a href="#">Корзина</a>
+    <div class="container">
+      <div class="footer__contacts">
+        <a href="#" class="footer__contact-item footer__contact-item--vk">Вконтакте</a>
+        <a href="#" class="footer__contact-item footer__contact-item--fb">Фейсбук</a>
+        <a href="#" class="footer__contact-item footer__contact-item--ig">Инстаграмм</a>
+      </div>
+      <div class="footer__text">
+        <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
+        <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
-  </div>
-</header>
-<main class="main">
-  <div class="main__slider main__slider--1">
-    <h2>Долго, дорого, скрупулезно.</h2>
-    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-    <a href="#">Узнать больше</a>
-  </div>
-  <div class="main__list">
-  <div class="main__item">
-    <img src="#" alt="">
-    <h3>Веб-сайты</h3>
-    <p>Мир никогда не будет прежним, после того, как увидит ваш сайт</p>
-    <button type="button" name="button">Заказать</button>
-  </div>
-  <div class="main__item">
-    <img src="#" alt="">
-    <h3>Приложения</h3>
-    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-    <button type="button" name="button">Заказать</button>
-  </div>
-  <div class="main__item">
-    <img src="#" alt="">
-    <h3>Презентации</h3>
-    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-    <button type="button" name="button">Заказать</button>
-  </div>
-</div>
-<div class="main__description">
-  <div class="main__text">
-    <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-    <ul>Выполняем заказы на разработку:
-      <li>Веб-сайтов любой сложности</li>
-      <li>Мобильных приложений для iOS и Android</li>
-      <li>Слайдшоу и видео для корпоративных презентаций</li>
-    </ul>
-  </div>
-  <div class="main__statistics">
-    <div class="main__logo">
-    <img src="" alt="">
-    </div>
-  <div class="main__table-title">C 2004 года любим точность во всем</div>
-  <table>
-    <tr>
-      <th>146%</th>
-      <th>100%</th>
-      <th>50%</th>
-    </tr>
-    <tr>
-      <td>Уровень самоотдачи</td>
-      <td>Соблюдение сроков</td>
-      <td>Минимальная предоплата</td>
-    </tr>
-  </table>
-  </div>
-</div>
-<div class="main__clients">
-  <div class="main__client main__client--academy"><a href=""></a>Академия</div>
-  <div class="main__client main__client--borodinsky"><a href="">Бородинский</a></div>
-  <div class="main__client main__client--pink"><a href=""></a>Пинк</div>
-  <div class="main__client main__client--mishka"><a href=""></a>Мишка</div>
-</div>
-</main>
-<footer class="footer">
-  <div class="footer__map">
-    <div class="footer__address">
-      <h1>NЁRDS DESIGN STUDIO</h1>
-      <p class="footer__address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="footer__address-phone">тел. +7 (812) 275-75-75</p>
-      <a class="footer__address-button">Напишите нам</a>
-      <div>
-  </div>
-  <div class="footer__contacts">
-    <a href="#" class="footer__contact-item footer__contact-item--vk">Вконтакте</a>
-    <a href="#" class="footer__contact-item footer__contact-item--fb">Фейсбук</a>
-    <a href="#" class="footer__contact-item footer__contact-item--ig">Инстаграмм</a>
-  </div>
-  <div class="footer__text">
-    <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
-    <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>
