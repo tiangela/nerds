@@ -40,6 +40,151 @@ header {
   padding-top: 25px;
 }
 
+.main {
+  margin-top: -20px;
+}
+
 .main__slider{
   background-color: #eee;
+  padding-bottom: 80px;
+}
+
+.main__slider-text {
+  padding-top: 80px;
+  width: 400px;
+}
+
+.main__slider-text span {
+  display: block;
+  font-size: 55px;
+  line-height: 55px;
+  padding-bottom: 20px;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.button--more {
+  background-color: #fb565a;
+  width: 240px;
+  border-radius: 5px;
+}
+
+.button__order {
+  width: 160px;
+}
+
+.button__order--red {
+  background-color: #fb565a;
+}
+
+.button__order--yellow {
+  background-color: #efc84a;
+}
+
+.button__order--green {
+  background-color: #00ca74;
+}
+
+.main__list {
+  margin-top: 82px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__item {
+  width: 300px;
+}
+
+.main__description {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.main__text {
+  width: 660px;
+  margin-right: 120px;
+}
+
+.main__text-title {
+  padding: 0;
+  padding-top: 45px;
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.main__text-slogan {
+  line-height: 24px;
+}
+
+.main__text h3 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.main__text-list {
+  list-style: none;
+}
+
+.main__text-list li {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.main__text-list li::before {
+  content: "";
+  top: 12px;
+  left: -35px;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.main__statistics {
+  width: 360px;
+}
+
+.main__table-title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main__table {
+  margin-top: 20px;
+}
+
+.main__table-row th {
+  font-size: 45px;
+  line-height: 10px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  text-align: left;
+}
+
+.main__table-row sup {
+  font-size: 28px;
 }
