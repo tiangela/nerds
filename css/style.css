@@ -170,17 +170,18 @@ header {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 25px;
 }
 
 .main__table {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .main__table-row th {
   font-size: 45px;
   line-height: 10px;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   padding-right: 15px;
   text-align: left;
 }
@@ -188,3 +189,120 @@ header {
 .main__table-row sup {
   font-size: 28px;
 }
+
+.main__clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 48px 30px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 80px;
+}
+
+.main__client {
+  opacity: 0.24;
+}
+
+.address {
+  position: relative;
+  width: 100%;
+  height: 418px;
+  z-index: 20;
+  background: #fff url("../img/map-marker.jpg") center no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 75px;
+}
+
+.address__title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.address__container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 70px;
+  left: 91px;
+  display: block;
+  background-color: #fff;
+  width: 320px;
+  height: 310px;
+  z-index: 30;
+  padding: 40px 50px;
+  }
+
+.address__text {
+  display: block;
+  color: #666;
+  width: 202px;
+}
+
+.address__phone {
+  color: #666;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.button__address {
+  background-color: #fb565a;
+  width: 220px;
+}
+.footer {
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-right: 140px;
+  }
+
+.footer__item {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.footer__item--vk {
+  background-image: url("../img/vk-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__item--fb {
+  background-image: url("../img/fb-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__item--ig {
+  background-image: url("../img/insta-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__text {
+  width: 560px;
+}
+
+.footer__text-slogan {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 600;
+}
+ .footer__text-offer {
+   font-size: 16px;
+   line-height: 22px;
+   color: #444;
+ }

@@ -37,14 +37,14 @@
   <main class="main">
     <div class="main__slider main__slider--1">
       <div class="container">
-      <div class="main__slider-text">
-        <span>Долго, дорого, скрупулезно.</span>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button button--more" href="#">Узнать больше</a>
+        <div class="main__slider-text">
+          <span>Долго, дорого, скрупулезно.</span>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button button--more" href="#">Узнать больше</a>
+        </div>
+        <div class="main__slider-photo">
+        </div>
       </div>
-      <div class="main__slider-photo">
-      </div>
-    </div>
     </div>
     <div class="container">
       <div class="main__list">
@@ -52,7 +52,7 @@
           <img src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним, после того, как увидит ваш сайт</p>
-          <a href="#"class="button button__order button__order--red">Заказать</a>
+          <a href="#" class="button button__order button__order--red">Заказать</a>
         </div>
         <div class="main__item">
           <img src="img/illustration-2.jpg" alt="Веб-сайты" width="300" height="146">
@@ -98,34 +98,37 @@
         </div>
       </div>
       <div class="main__clients">
-        <div class="main__client main__client--academy"><a href=""></a>Академия</div>
-        <div class="main__client main__client--borodinsky"><a href="">Бородинский</a></div>
-        <div class="main__client main__client--pink"><a href=""></a>Пинк</div>
-        <div class="main__client main__client--mishka"><a href=""></a>Мишка</div>
+        <a href="#" class="main__client main__client--academy"><img src="img/logo-1.png" alt="Академия" width="199" height="68"></a>
+        <a href="#" class="main__client main__client--borodinsky"><img src="img/logo-2.png" alt="Бородинский" width="209" height="90"></a>
+        <a href="#" class="main__client main__client--pink"><img src="img/logo-3.png" alt="Пинк" width="185" height="52"></a>
+        <a href="#" class="main__client main__client--mishka"><img src="img/logo-4.png" alt="Мишка" width="173" height="84"></a>
       </div>
     </div>
   </main>
-  <footer class="footer">
-    <div class="footer__map">
-      <div class="footer__address">
-        <h1>NЁRDS DESIGN STUDIO</h1>
-        <p class="footer__address-text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="footer__address-phone">тел. +7 (812) 275-75-75</p>
-        <a class="footer__address-button">Напишите нам</a>
-      </div>
+  <div class="address">
+    <div class="address__map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
-    <div class="container">
+    <div class="address__container">
+        <h1 class="address__title">NЁRDS DESIGN STUDIO</h1>
+        <p class="address__text">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="address__phone">тел. +7 (812) 275-75-75</p>
+        <a class="button button__address">Напишите нам</a>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="footer">
       <div class="footer__contacts">
-        <a href="#" class="footer__contact-item footer__contact-item--vk">Вконтакте</a>
-        <a href="#" class="footer__contact-item footer__contact-item--fb">Фейсбук</a>
-        <a href="#" class="footer__contact-item footer__contact-item--ig">Инстаграмм</a>
+        <a href="#" class="footer__item footer__item--vk"></a>
+        <a href="#" class="footer__item footer__item--fb"></a>
+        <a href="#" class="footer__item footer__item--ig"></a>
       </div>
       <div class="footer__text">
         <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
         <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
