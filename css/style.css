@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 
-header {
+.header {
   background-color: #eee;
   text-transform: uppercase;
   padding-top: 50px;
@@ -40,24 +40,126 @@ header {
   padding-top: 25px;
 }
 
-.main {
-  margin-top: -20px;
+.menu__basket {
+  position: relative;
+  padding-left: 40px;
 }
 
-.main__slider{
+.menu__basket::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 7px;
+  left: 0;
+  background: url("../img/cart-icon.png");
+}
+
+.slider__dots-wrp {
+  position: absolute;
+  bottom: 106px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider__dot {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 6px;
+  background: #fff;
+  border: 5px solid #fff;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.slider__dot::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+
+.slider{
   background-color: #eee;
-  padding-bottom: 80px;
+  position: relative;
 }
 
-.main__slider-text {
+.slider__text {
   padding-top: 80px;
+  padding-bottom: 78px;
   width: 400px;
 }
 
-.main__slider-text span {
+.slider input[type=radio] {
+  display: none;
+}
+
+#btn-1:checked ~ .slider__dots-wrp .slider__dot[for="btn-1"],
+#btn-2:checked ~ .slider__dots-wrp .slider__dot[for="btn-2"],
+#btn-3:checked ~ .slider__dots-wrp .slider__dot[for="btn-3"] {
+  background: #c1c1c1;
+}
+
+.slider__item:nth-child(1) {
+background-image: url("../img/slider-1.jpg");
+background-repeat:no-repeat;
+background-position: 100% 28px;
+}
+
+.slider__item:nth-child(2) {
+background-image: url("../img/slider-2.jpg");
+background-repeat:no-repeat;
+background-position: 100% 28px;
+}
+
+.slider__item:nth-child(3) {
+background-image: url("../img/slider-3.jpg");
+background-repeat:no-repeat;
+background-position: 100% 28px;
+}
+
+.slider__item {
+  display: none;
+}
+
+#btn-1:checked ~ .slider__list .slider__item:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slider__list .slider__item:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slider__list .slider__item:nth-child(3) {
+    display: block;
+}
+
+.slider__title {
   display: block;
   font-size: 55px;
   line-height: 55px;
+  padding-bottom: 30px;
+}
+.slider__slogan {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.main__slides--general {
+  margin-bottom: 50px;
+}
+.main__title--slider {
   padding-bottom: 20px;
 }
 
@@ -74,10 +176,11 @@ header {
   text-align: center;
 }
 
-.button--more {
+.button__slider {
   background-color: #fb565a;
   width: 240px;
   border-radius: 5px;
+  margin-top: 45px;
 }
 
 .button__order {
@@ -271,6 +374,7 @@ header {
   height: 77px;
   border-radius: 50%;
   background-color: #e1e1e1;
+  font-size: 0;
 }
 
 .footer__item--vk {
@@ -306,3 +410,219 @@ header {
    line-height: 22px;
    color: #444;
  }
+
+.main__title--catalog {
+  padding-top: 80px;
+  padding-bottom: 115px;
+  text-align: center;
+  background-color: #eee;
+  }
+
+.container__catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter {
+  width: 238px;
+  margin-right: 120px;
+}
+
+.catalog {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.catalog__filter {
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.catalog__sort-title{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-right: 240px;
+}
+
+.catalog__sort {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.catalog__sort-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 27px;
+  color: #cacaca;
+}
+
+.catalog__sort-item--active {
+  color: #000;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  box-sizing: border-box;
+  margin-top: 65px;
+  }
+
+.catalog__item {
+  margin-right: 40px;
+  margin-bottom: 80px;
+  position: relative;
+  }
+.catalog__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog__item::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #eee;
+  top:-40px;
+}
+
+.catalog__item::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50px;
+  top: -25px;
+  box-shadow: 25px 0 0 0 #fff,
+  -25px 0 0 0 #fff;
+}
+
+.catalog__toggle-list {
+  display: inline-block;
+  margin-left: 37px;
+}
+
+.catalog__toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.catalog__toggle--down {
+  width: 9px;
+  height: 9px;
+  margin-right: 10px;
+  background-image: url("../img/sort-down.png");
+}
+
+.catalog__toggle--up {
+  width: 9px;
+  height: 9px;
+  background-image: url("../img/sort-up.png");
+  opacity: 0.2;
+  cursor: auto;
+}
+
+.filter__title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.filter__title--price {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.filter__price {
+  margin-bottom: 57px;
+}
+
+.filter__grid, .filter__features {
+  margin-bottom: 57px;
+}
+
+.filter__radio, .filter__check {
+  display: none;
+}
+
+.filter__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #283136;
+  padding-bottom: 25px;
+  padding-left: 37px;
+}
+
+.filter__label:last-child {
+  padding-bottom: 0;
+}
+
+.filter__label--radio::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/radio-off.png");
+}
+
+input[type=radio]:checked + label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/radio-on.png");
+}
+
+.filter__label--check::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/checkbox-off.png");
+}
+
+input[type=checkbox]:checked + label::before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../img/checkbox-on.png");
+}
+
+.filter__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  width: 260px;
+  min-height: 50px;
+  background-color: #eee;
+  border: 0;
+  cursor: pointer;
+  }
