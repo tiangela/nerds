@@ -99,7 +99,7 @@ body {
 .slider__text {
   padding-top: 80px;
   padding-bottom: 78px;
-  width: 400px;
+  width: 515px;
 }
 
 .slider input[type=radio] {
@@ -144,7 +144,7 @@ background-position: 100% 28px;
     display: block;
 }
 
-.slider__title {
+.slider__title, .main__title--catalog {
   display: block;
   font-size: 55px;
   line-height: 55px;
@@ -154,13 +154,6 @@ background-position: 100% 28px;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-}
-
-.main__slides--general {
-  margin-bottom: 50px;
-}
-.main__title--slider {
-  padding-bottom: 20px;
 }
 
 .button {
@@ -313,7 +306,7 @@ background-position: 100% 28px;
   z-index: 20;
   background: #fff url("../img/map-marker.jpg") center no-repeat;
   background-size: cover;
-  top: 0;
+  top: 60px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -547,8 +540,74 @@ background-position: 100% 28px;
   padding-bottom: 60px;
 }
 
+.filter__range {
+  position: relative;
+  height: 41px;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  background: #f1f1f1;
+}
+
+.filter__scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.filter__bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  background: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.filter__toggle--min {
+  left: 20px;
+}
+
+.filter__toggle--max {
+  left: 145px;
+}
+
 .filter__price {
   margin-bottom: 57px;
+  font-size: 0;
+}
+.filter__value {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.filter__value-input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  text-align: center;
+  width: 60px;
+  padding: 8px 10px;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.filter__value--max-price {
+  text-align: right;
 }
 
 .filter__grid, .filter__features {
@@ -625,4 +684,27 @@ input[type=checkbox]:checked + label::before {
   background-color: #eee;
   border: 0;
   cursor: pointer;
+  border-radius: 5%;
+  }
+
+.paginator__link {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 50px;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 16px 21px;
+  background-color: #eee;
+  border-radius: 5%;
+  margin-right: 6px;
+
+  }
+
+  .paginator--current {
+    background-color: #fff;
+    border: 2px solid #eee;
+    box-sizing: border-box;
   }
