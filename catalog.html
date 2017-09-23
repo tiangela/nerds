@@ -38,14 +38,15 @@
       <form action="form.php" method="GET" class="filter">
         <span class="filter__title filter__title--price">Стоимость:</span>
         <div class="filter__range">
-          <div class="filter__scale"></div>
-          <div class="filter__bar"></div>
+          <div class="filter__scale">
+            <div class="filter__bar"></div>
+          </div>
           <div class="filter__toggle filter__toggle--min"></div>
           <div class="filter__toggle filter__toggle--max"></div>
         </div>
         <div class="filter__price">
-          <label class="filter__value filter__value--min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="filter__value filter__value--max-price">до <input name="max-price" type="text" value="15000"></label>
+          <label class="filter__value filter__value--min-price">от <input class="filter__value-input" name="min-price" type="text" value="0"></label>
+          <label class="filter__value filter__value--max-price">до <input class="filter__value-input" name="max-price" type="text" value="15000"></label>
         </div>
         <div class="filter__grid">
           <span class="filter__title">Сетка</span>
@@ -92,10 +93,10 @@
           <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Квас"></a></div>
         </div>
         <div class="paginator">
-          <a href="" class="paginator__current">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#" class="paginator__next">Следующая</a>
+          <a href="" class="paginator__link paginator--current">1</a>
+          <a href="#" class="paginator__link">2</a>
+          <a href="#" class="paginator__link">3</a>
+          <a href="#" class="paginator__link paginator--next">Следующая</a>
         </div>
       </div>
     </div>
