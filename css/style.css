@@ -21,6 +21,14 @@ body {
   justify-content: space-between;
 }
 
+.menu__link-main img:hover {
+  opacity: 0.7;
+}
+
+.menu__link-main img:active {
+  opacity: 0.5;
+}
+
 .menu__list{
   list-style: none;
   margin: 0;
@@ -29,6 +37,7 @@ body {
 
 .menu__item {
     display: inline-block;
+    position: relative;
     margin-right: 50px;
 }
 
@@ -38,6 +47,23 @@ body {
   color: #000;
   line-height: 30px;
   padding-top: 25px;
+}
+
+.menu__item a:hover, .menu__user a:hover {
+  color: #fb565a;
+}
+
+.menu__item a:active, .menu__user a:active {
+  color: #a6a6a6;
+}
+
+.menu__item--active::before {
+  content: "";
+  position: absolute;
+  background: #fb565a;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
 }
 
 .menu__basket {
