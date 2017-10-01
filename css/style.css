@@ -185,7 +185,7 @@ background-position: 100% 28px;
   color: #283136;
 }
 
-.button {
+.button, .btn-hover {
   display: block;
   box-sizing: border-box;
   font-size: 16px;
@@ -203,6 +203,12 @@ background-position: 100% 28px;
   margin-top: 45px;
 }
 
+.btn-hover {
+  width: 200px;
+  border: 0;
+  background-color: #fb565a;
+  margin-top: 28px;
+}
 
 .button__slider, .button__order--red {
   background-color: #fb565a;
@@ -573,6 +579,19 @@ background-position: 100% 28px;
   margin-bottom: 80px;
   position: relative;
   }
+
+.catalog__item:hover {
+  box-shadow: 0px 7px 9px -3px #cfcfcf;
+}
+
+.catalog__item:hover .catalog__hover {
+  display: block;
+}
+
+ .catalog__item:hover::before {
+    background-color: #4d4d4d;
+}
+
 .catalog__item:nth-child(2n) {
   margin-right: 0;
 }
@@ -602,12 +621,17 @@ background-position: 100% 28px;
 }
 
 .catalog__hover {
-  display: block;
+  position: absolute;
   height: 235px;
   width: 100%;
   background-color: #eee;
   box-sizing: border-box;
+  margin-top: 350px;
+  z-index: 10;
+  bottom: 0;
+  display: none;
 }
+
 .catalog__hover-wrp {
   display: block;
   margin: 0 auto;
@@ -615,13 +639,21 @@ background-position: 100% 28px;
   width: 200px;
 }
 .catalog__discription {
-  display: block;
-}
-.catalog__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: #939393;
+  display: inline-block;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
+.catalog__title {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 28px 0 18px 0;
+  text-align: center;
+  text-transform: uppercase;
+  }
 .catalog__toggle-list {
   display: inline-block;
   margin-left: 37px;
