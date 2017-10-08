@@ -929,8 +929,20 @@ input[type=checkbox]:checked + label::before {
   padding: 15px;
   margin-top: 10px;
   border: 2px solid #d7dcde;
-  border-radius: 2%;
+  border-radius: 5px;
   width: 360px;
+  outline: none;
+}
+
+.modal__input:focus, .modal__comment:focus {
+  color: #000;
+  border: 2px solid #000;
+}
+
+.modal__input:invalid, .modal__comment:invalid {
+  box-shadow: none;
+  color: #e74246;
+  border: 2px solid #e74246;
 }
 
 .modal__text {
@@ -962,7 +974,7 @@ input[type=checkbox]:checked + label::before {
 .modal__close {
   position: absolute;
   font-size: 0;
-  top: 70px;
+  top: 80px;
   right: 90px;
   width: 21px;
   height: 21px;
@@ -971,4 +983,12 @@ input[type=checkbox]:checked + label::before {
   background: none;
   background-image: url("../img/close-cross.png");
   opacity: .3;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.modal__close:active {
+  opacity: .1;
 }
