@@ -185,7 +185,7 @@ background-position: 100% 28px;
   color: #283136;
 }
 
-.button, .btn-hover {
+.button, .btn-hover, .btn  {
   display: block;
   box-sizing: border-box;
   font-size: 16px;
@@ -887,12 +887,88 @@ input[type=checkbox]:checked + label::before {
 
 .modal {
   position: fixed;
-  z-index: 1002;
+  z-index: 1500;
   top: 50%;
   left: 50%;
   margin-left: -480px;
+  margin-top: -300px;
+  padding-bottom: 85px;
   box-sizing: border-box;
   width: 960px;
   height: 590px;
-  background-color: #f8f7f4;
+  background-color: #fff;
+  box-shadow: -1px 12px 19px -5px #000;
+}
+
+.modal__wrp {
+  padding-top: 70px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.modal__title {
+  position: relative;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 600;
+}
+.modal__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 55px;
+}
+
+.modal__input, .modal__comment {
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 18px;
+  color: #a1a1a1;
+  padding: 15px;
+  margin-top: 10px;
+  border: 2px solid #d7dcde;
+  border-radius: 2%;
+  width: 360px;
+}
+
+.modal__text {
+  display: inline-block;
+  width: 360px;
+}
+
+.modal__text--comment {
+  position: relative;
+}
+
+.modal__comment {
+  width: 760px;
+  height: 115px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 75px;
+  background-color: #fb565a;
+  width: 260px;
+  border: 0;
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+}
+
+.modal__close {
+  position: absolute;
+  font-size: 0;
+  top: 70px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  background-image: url("../img/close-cross.png");
+  opacity: .3;
 }
