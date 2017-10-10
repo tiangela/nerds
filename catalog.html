@@ -173,6 +173,25 @@
       </div>
     </footer>
   </div>
+  <div class="modal">
+    <div class="modal__wrp">
+    <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+    <span class="modal__title">Напишите нам!</span>
+    <form class="modal__form" action="#" method="post">
+      <label class="modal__text" for="login">Ваше имя
+      <input class="modal__input modal__input--login" id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="modal__text" for="email">Ваш e-mail
+      <input class="modal__input modal__input--mail" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </label>
+      <p class="modal__text modal__text--comment">Текст письма
+      <textarea class="modal__comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    </div>
+</div>
+<div class="modal__overlay"></div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

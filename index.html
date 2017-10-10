@@ -129,7 +129,7 @@
     </div>
   </main>
   <div class="address">
-    <div class="address__map">
+  <div class="address__map">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
     <div class="address__container">
@@ -139,25 +139,7 @@
       <a href="#" class="button button__address">Напишите нам</a>
     </div>
     </div>
-    <div class="modal">
-      <div class="modal__wrp">
-      <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
-      <span class="modal__title">Напишите нам!</span>
-      <form class="modal__form" action="#" method="post">
-        <label class="modal__text" for="login">Ваше имя
-        <input class="modal__input" id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
-        </label>
-        <label class="modal__text" for="email">Ваш e-mail
-        <input class="modal__input" type="email" name="email" id="email" placeholder="Для отправки ответа">
-        </label>
-        <p class="modal__text modal__text--comment">Текст письма
-        <textarea class="modal__comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
-      </div>
-  </div>
-  <div class="modal__overlay"></div>
-  <div class="container">
+    <div class="container">
     <footer class="footer">
       <div class="footer__contacts">
         <a href="#" class="footer__item footer__item--vk">Вконтакте</a>
@@ -170,6 +152,24 @@
       </div>
     </footer>
   </div>
-</body>
-
+  <div class="modal">
+    <div class="modal__wrp">
+    <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+    <span class="modal__title">Напишите нам!</span>
+    <form class="modal__form" action="#" method="post">
+      <label class="modal__text" for="login">Ваше имя
+      <input class="modal__input modal__input--login" id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="modal__text" for="email">Ваш e-mail
+      <input class="modal__input modal__input--mail" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </label>
+      <p class="modal__text modal__text--comment">Текст письма
+      <textarea class="modal__comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    </div>
+</div>
+<div class="modal__overlay"></div>
+<script src="js/script.js"></script>
+  </body>
 </html>
