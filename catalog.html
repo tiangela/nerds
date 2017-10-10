@@ -22,7 +22,7 @@
               <ul class="menu__list">
               <li class="menu__item"><a href="index.html">Студия</a></li>
               <li class="menu__item"><a href="#">Клиенты</a></li>
-              <li class="menu__item menu__item--active"><a href="catalog.html">Магазин</a></li>
+              <li class="menu__item menu__item--active"><a href="">Магазин</a></li>
               <li class="menu__item"><a href="#">Контакты</a></li>
             </ul>
           </div>
@@ -33,7 +33,7 @@
     </div>
   </header>
   <main class="main">
-    <span class="main__title main__title--catalog">Магазин готовых шаблонов</span>
+    <h1 class="main__title main__title--catalog">Магазин готовых шаблонов</h1>
     <div class="container container__catalog">
       <form action="form.php" method="GET" class="filter">
         <span class="filter__title filter__title--price">Стоимость:</span>
@@ -75,9 +75,9 @@
       <div class="catalog">
         <div class="catalog__filter">
           <ul class="catalog__sort"><span class="catalog__sort-title">Сортировать:</span>
-            <li class="catalog__sort-item catalog__sort-item--active">По цене</li>
-            <li class="catalog__sort-item">По типу</li>
-            <li class="catalog__sort-item">По названию</li>
+            <li class="catalog__sort-item catalog__sort-item--active"><a href="">По цене</a></li>
+            <li class="catalog__sort-item"><a href="#">По типу</a></li>
+            <li class="catalog__sort-item"><a href="#">По названию</a></li>
           </ul>
           <div class="catalog__toggle-list">
           <div class="catalog__toggle catalog__toggle--down"></div>
@@ -85,12 +85,60 @@
         </div>
         </div>
         <div class="catalog__list">
-          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седона"></a></div>
-          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Макет Пинк"></a></div>
-          <div class="catalog__item">  <a class="catalog__item-link" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Барбершоп"></a></div>
-          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Мишка"></a></div>
-          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Макет Школа"></a></div>
-          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Квас"></a></div>
+          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седона"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">Седона</h2>
+            <span class="catalog__discription">Информационный сайт для туристов</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
+          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Макет Пинк"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">Pink app</h2>
+            <span class="catalog__discription">Продуктовый лендинг приложения для iOS и Android</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
+          <div class="catalog__item">  <a class="catalog__item-link" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Барбершоп"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">Barbershop</h2>
+            <span class="catalog__discription">Сайт салона красоты. <br>Для мужчин, да.</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
+          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Мишка"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">Mishka</h2>
+            <span class="catalog__discription">Интернет-магазин вязанных игрушек</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
+          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Макет Школа"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">A Plus</h2>
+            <span class="catalog__discription">Лендинг курсов повышения квалификации</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
+          <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Квас"></a>
+            <div class="catalog__hover">
+            <div class="catalog__hover-wrp">
+            <h2 class="catalog__title">Кваст</h2>
+            <span class="catalog__discription">Промо-сайт производителя крафтового кваса</span>
+            <button type="button" class="btn-hover">9 900 руб.</button>
+            </div>
+          </div>
+          </div>
         </div>
         <div class="paginator">
           <a href="" class="paginator__link paginator--current">1</a>
@@ -125,6 +173,25 @@
       </div>
     </footer>
   </div>
+  <div class="modal">
+    <div class="modal__wrp">
+    <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+    <span class="modal__title">Напишите нам!</span>
+    <form class="modal__form" action="#" method="post">
+      <label class="modal__text" for="login">Ваше имя
+      <input class="modal__input modal__input--login" id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="modal__text" for="email">Ваш e-mail
+      <input class="modal__input modal__input--mail" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </label>
+      <p class="modal__text modal__text--comment">Текст письма
+      <textarea class="modal__comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    </div>
+</div>
+<div class="modal__overlay"></div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
